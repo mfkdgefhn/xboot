@@ -15,7 +15,7 @@ server:
 spring:
   # 数据源
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/xboot-opensource?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/xboot?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果)
     password: ENC(F4B0s6u9xcDw3V+P0qC4CA==)
@@ -110,19 +110,19 @@ xboot:
 # 忽略鉴权url
 ignored:
   urls:
-    - /xboot/dictData/getByType/**
-    - /xboot/user/regist
-    - /xboot/common/**
-    - /druid/**
-    - /swagger-ui.html
-    - /swagger-resources/**
-    - /swagger/**
-    - /**/v2/api-docs
-    - /**/*.js
-    - /**/*.css
-    - /**/*.png
-    - /**/*.ico
-    - /test/**
+  - /xboot/dictData/getByType/**
+  - /xboot/user/regist
+  - /xboot/common/**
+  - /druid/**
+  - /swagger-ui.html
+  - /swagger-resources/**
+  - /swagger/**
+  - /**/v2/api-docs
+  - /**/*.js
+  - /**/*.css
+  - /**/*.png
+  - /**/*.ico
+  - /test/**
 
 # Swagger界面内容配置
 swagger:
