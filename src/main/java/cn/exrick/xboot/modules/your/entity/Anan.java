@@ -23,7 +23,7 @@ public class Anan extends XbootBaseEntity {
     private static final long serialVersionUID = 1L;
     @ApiModelProperty(value="用户名")
     @Column(unique=true,nullable=false)
-    private  String username;
+    private  String username1;
 
     @ApiModelProperty(value = "密码")
     @Column(length = 18, nullable = false)
